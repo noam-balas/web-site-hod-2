@@ -130,7 +130,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
   }
 
   .navbar .container-fluid .navbar-brand {
-    width: 40%;
+    width: auto;
     height: auto;
   }
 
@@ -138,7 +138,8 @@ nav .navbar-nav .nav-item .nav-link:hover {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     padding-right: 0;
-    width: 12em;
+    width: 5em;
+    height: 1.5em;
     text-align: left;
   }
 }
@@ -199,7 +200,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
   width: 100vw;
   position: relative;
   text-align: center;
-  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/wesley-tingey--Irs24DzLxM-unsplash.jpg");
+  background-image: url("wesley-tingey--Irs24DzLxM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;*/
   position: relative;
@@ -227,6 +228,13 @@ nav .navbar-nav .nav-item .nav-link:hover {
   height: 100%;
   padding: 10% 15% 10% 15%;
 }
+
+@media (max-width: 768px) {
+  .video {
+    padding: 5% 15% 5% 15%;
+  }
+}
+
 /*
 @media (max-width: 1500px) {
   .video {
@@ -328,7 +336,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
 @media (max-width: 991px) {
   .copyright .footer-brand-container .footer-brand {
     margin-top: 1em;
-    width: 17.5em;
+    width: 8.5em;
   }
 }
 
@@ -428,6 +436,9 @@ nav .navbar-nav .nav-item .nav-link:hover {
   .background-text {
     padding: 5%;
   }
+  .heading1 {
+    font-size: 1.25em;
+  }
 
   .text {
     position: relative;
@@ -440,15 +451,11 @@ nav .navbar-nav .nav-item .nav-link:hover {
     text-align: right;
     background: black;
     background: rgba(0, 0, 0, 0.7);
-    font-size: 1.25em;
+    font-size: 1em;
   }
 }
 
-@media (max-width: 768px) {
-
-}
-
-/*apply below 1024px - tablet and mobile*/
+/*apply below 768px - tablet and mobile*/
 @media (max-width: 768px) {
   .vid1 {
     visibility: hidden;
@@ -491,7 +498,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
 }
 
 .music-top .header-music {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1.5em;
   font-size: 5em;
   color: black;
