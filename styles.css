@@ -1,0 +1,547 @@
+/* index.html */
+
+body {
+  overflow-x: hidden;
+}
+
+/***************************************************/
+
+.background-container {
+  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/background_pc_Wondershare2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*apply below 1024px - tablet and mobile*/
+@media (max-width: 768px) {
+   .background-container {
+     background-image: url("/home/noam/Website Hod/קבצים אתר הוד/קבצים/background-smartphone_Wondershare 9-16.jpg");
+     height: 93vh;
+     width: 100vw;
+     overflow: hidden;
+   }
+ }
+/****************************************************************/
+
+@media (max-height: 480px) {
+  .background-container {
+    height: 86vh;
+  }
+}
+
+
+/****************************************************/
+.navbar {
+  background-color: black;
+  height: 3.5em;
+  font-size: 1.5em;
+}
+
+.navbar .container-fluid .offcanvas {
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav {
+    margin-top: 60%;
+}
+
+.space {
+  opacity: 0;
+}
+
+.home-icon {
+  font-size: 150%;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.home-icon:hover {
+  color: red;
+  text-shadow: 0 0 1.5px red;
+}
+
+.navbar .container-fluid button {
+  background-color: white;
+}
+
+.navbar .container-fluid .navbar-brand {
+  text-align: center;
+  margin-right: 9em;
+  width: auto;
+  height: 100%;
+}
+
+/* set color for nav-items and set the size of brand */
+nav .navbar-nav .nav-item .nav-link{
+  transition-property: all;
+  transition-duration: 0.5s;
+  font-family: 'Open Sans', sans-serif;
+  /*font-size: 1.5em;*/
+  color: white;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+  color: red;
+  text-shadow: 0 0 1.5px red;
+}
+
+.navbar .container-fluid .offcanvas-body .navbar-nav .icons-canvas {
+  display: none;
+}
+
+.icon {
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.icon:hover {
+  color: red;
+  text-shadow: 0 0 1.5px red;
+}
+
+/* remove the border from the navbar button when pressed */
+.navbar .container-fluid .navbar-toggler {
+  border: 0;
+}
+
+
+@media (max-width: 991px) {
+  .navbar {
+    height: 3em;
+  }
+  .navbar .container-fluid .icons-nav {
+    display: none;
+  }
+
+  .navbar .container-fluid .offcanvas-body .navbar-nav .icons-canvas {
+    display: block;
+  }
+
+  .navbar .container-fluid .navbar-brand {
+    width: 40%;
+    height: auto;
+  }
+
+  .navbar .container-fluid .navbar-brand .brand {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 0;
+    width: 12em;
+    text-align: left;
+  }
+}
+
+/******************************************************/
+
+
+/* set carousel */
+/*
+.container3 {
+  position: relative;
+  background-color: #212121;
+  height: auto;
+  width: 100vw;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.container3 .carousel {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding-bottom: 4em;
+}
+*/
+/* set carousel video dimensions */
+/*.container3 .carousel .carousel-inner {
+  text-align: center;
+  height: 100%;
+}
+
+.container3 .carousel .carousel-inner .carousel-item iframe {
+  width: 70%;
+  height: 700px;
+}*/
+
+/* set carousel controls */
+/*.container3 .carousel .carousel-inner .carousel-control-prev,
+.container3 .carousel .carousel-inner .carousel-control-next {
+  text-decoration: none;
+}
+
+.container3 .carousel .carousel-inner .carousel-control-prev .prev-icon,
+.container3 .carousel .carousel-inner .carousel-control-next .next-icon {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.container3 .carousel .carousel-inner .carousel-control-prev .prev-icon:active,
+.container3 .carousel .carousel-inner .carousel-control-next .next-icon:active {
+  color: #EF3340;
+  font-size: 3em;
+  text-decoration: none;
+}
+*/
+
+.videos {
+  /*height: 75vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/wesley-tingey--Irs24DzLxM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/wesley-tingey--Irs24DzLxM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.video {
+  /*
+  position: absolute;
+  height: 55%;
+  width: 40%;
+  top: 22.5%;
+  right: 30%;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10% 15% 10% 15%;
+}
+/*
+@media (max-width: 1500px) {
+  .video {
+    height: 55%;
+    width: 45%;
+    top: 22.5%;
+    right: 30%;
+  }
+}
+
+@media (max-height: 480px) {
+  .video {
+
+  }
+}*/
+/*
+.video2 {
+  height: 33%;
+  width: 27%;
+  top: 32.5%;
+  right: 17.5%;
+}*/
+/********************************************************/
+/* copyright - the footer of the page */
+.copyright {
+  position: relative;
+  bottom: 0;
+  padding-bottom: 11.5em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 1em;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  background-size: 100%;
+}
+
+.rights {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-size: 80%;
+  color: #949494;
+}
+
+.footer-icons {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 6em;
+}
+
+.footer-icon {
+  /*transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: linear;*/
+  color: white;
+  border-color: #B1B1B1;
+  border-style: solid;
+  border-width: 1.75px;
+  border: 1;
+  border-radius: 50%;
+  font-size: 110%;
+  padding: 0.65em 0.75em 0.65em 0.75em;
+
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+
+.footer-icon:hover {
+  /*color: #EDE0AA;*/
+  /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+  /*border-color: #D2B48C;*/
+  border-color: red;
+  color: red;
+  text-shadow: 0 0 1.5px red;
+}
+
+.space-footer {
+  visibility: hidden;
+}
+
+.copyright .footer-brand-container {
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.copyright .footer-brand-container .footer-brand {
+  margin-top: 1em;
+}
+
+@media (max-width: 991px) {
+  .copyright .footer-brand-container .footer-brand {
+    margin-top: 1em;
+    width: 17.5em;
+  }
+}
+
+
+/*****************************************/
+
+/* about.html */
+
+.about-body {
+  background-color: transparent;
+}
+
+.vid2 {
+  visibility: hidden;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+.video-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/marjan-blan-marjanblan-9tqAeLDQT-o-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  position: absolute;
+ height: 100%;
+ width: 100%;
+}
+
+/* Style the button used to pause/play the video */
+.vid-button {
+  position: absolute;
+  width: auto;
+  font-size: 18px;
+  bottom: 2%;
+  left: 6%;
+  padding: 10px 75px 10px 75px;
+  border: none;
+  background: #171515;
+  color: #fff;
+  cursor: pointer;
+}
+
+.vid-button:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Add some content at the bottom of the video/page
+.content {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding-bottom: 1%;
+}
+*/
+/* set the text */
+.background-text {
+  height: auto;
+  width: 100vw;
+  padding: 10% 0 10% 0;
+  position: relative;
+  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/bg about_Wondershare5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text {
+  position: relative;
+  height: auto;
+  width: 59%;
+  color: white;
+  padding: 5%;
+  top: 10%;
+  left: 20%;
+  text-align: right;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.5em;
+}
+
+.heading1 {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: underline;
+}
+
+.para {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 1500px) {
+  .background-text {
+    padding: 5%;
+  }
+
+  .text {
+    position: relative;
+    height: auto;
+    width: 95%;
+    color: white;
+    padding: 5%;
+    top: 5%;
+    left: 3%;
+    text-align: right;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+/*apply below 1024px - tablet and mobile*/
+@media (max-width: 768px) {
+  .vid1 {
+    visibility: hidden;
+  }
+  .vid2 {
+    visibility: visible;
+    height: 93vh;
+    width: 100vw;
+  }
+ }
+/****************************************************************/
+
+@media (max-height: 480px) {
+  .vid1 {
+    height: 86vh;
+    width: 100vw;
+  }
+}
+/*****************************************************/
+
+/* music.html */
+
+.music-body {
+  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/wesley-tingey--Irs24DzLxM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+/*
+.top-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 7%;
+  background-color: transparent;
+  position: relative;
+}
+*/
+.music-top {
+  position: relative;
+}
+
+.music-top .header-music {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  font-size: 5em;
+  color: black;
+  display: inline-grid;
+  width: auto;
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: 'Karantina', cursive;
+}
+
+.music-top .music-icon {
+  font-size: 4em;
+  display: inline-grid;
+}
+
+.music-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /*padding-top: 56.25%;*/ /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  display: block;
+}
+
+
+.music-container .music {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 300px;
+  margin: 0 5% 5% 5%;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .music-top .header-music {
+    margin-bottom: 1em;
+  }
+  .music-container .music {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 250px;
+    padding: 0 10% 10% 10%;
+  }
+}
