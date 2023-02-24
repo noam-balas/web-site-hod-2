@@ -7,7 +7,7 @@ body {
 /***************************************************/
 
 .background-container {
-  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/background_pc_Wondershare2.jpg");
+  background-image: url("background_pc_Wondershare2.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -17,7 +17,7 @@ body {
 /*apply below 1024px - tablet and mobile*/
 @media (max-width: 768px) {
    .background-container {
-     background-image: url("/home/noam/Website Hod/קבצים אתר הוד/קבצים/background-smartphone_Wondershare 9-16.jpg");
+     background-image: url("background-smartphone_Wondershare 9-16.jpg");
      height: 93vh;
      width: 100vw;
      overflow: hidden;
@@ -206,7 +206,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/wesley-tingey--Irs24DzLxM-unsplash.jpg");
+  background-image: url("wesley-tingey--Irs24DzLxM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -350,7 +350,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/marjan-blan-marjanblan-9tqAeLDQT-o-unsplash.jpg");
+  background-image: url("marjan-blan-marjanblan-9tqAeLDQT-o-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -397,7 +397,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
   width: 100vw;
   padding: 10% 0 10% 0;
   position: relative;
-  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/bg about_Wondershare5.jpg");
+  background-image: url("bg about_Wondershare5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -472,7 +472,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
 /* music.html */
 
 .music-body {
-  background-image: url("/home/noam/Website Hod/קבצים אתר הוד/wesley-tingey--Irs24DzLxM-unsplash.jpg");
+  background-image: url("wesley-tingey--Irs24DzLxM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
